@@ -1,0 +1,151 @@
+body{
+background: blue;
+margin:0;
+font-family:sans-serif;
+
+background: linear-gradient(135deg,#ffd6ec,#e6d6ff,#d6f0ff);
+
+height:100vh;
+overflow: auto;
+}
+
+.center{
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+padding: 50px ;
+
+}
+h1{
+color:#ff4d8d;
+text-shadow:0 0 12px #ff9cc3;
+}
+.hidden{
+
+display:none;
+
+}
+
+.gift-box{
+
+font-size:700px;
+cursor:pointer;
+transition:0.4s;
+
+}
+
+.gift-box:hover{
+
+transform:scale(1.2);
+
+}
+
+.tap{
+
+color:#555;
+font-size:18px;
+
+}
+
+.message{
+
+max-width:400px;
+font-size:5px;
+color:#444;
+margin-bottom:20px;
+
+}
+
+
+.finalmsg{
+max-width:700px;
+font-size:20px;
+padding:20px;
+line-height:1.7;
+margin-top: 20px;
+}
+}
+
+button{
+
+padding:12px 35px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:#ff4d8d;
+color:white;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#ff2e74;
+
+}
+
+
+/* hearts animation */
+
+.heart{
+
+position:absolute;
+font-size:22px;
+animation:float 3s linear forwards;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+opacity:1;
+}
+
+100%{
+transform:translateY(-350px);
+opacity:0;
+}
+
+}
+.butterflies{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+}
+
+.butterfly{
+position:absolute;
+font-size:28px;
+animation:fly 10s linear infinite;
+opacity:0.8;
+}
+
+@keyframes fly{
+
+0%{
+transform:translateY(100vh) translateX(0);
+}
+
+100%{
+transform:translateY(-100vh) translateX(200px);
+}
+
+}
+#surprisePage{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:flex-start;
+height:100vh;
+overflow-y:auto;
+padding:40px;
+}
